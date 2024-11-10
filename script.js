@@ -5,7 +5,7 @@ document.getElementById("getWeather").addEventListener("click", function() {
         return;
     }
         
-    const apiKey = "2c11e0fedd057445e87df76c9cdcb2b0"; 
+    const apiKey = "2c11e0fedd057445e87df76c9cdcb2b0"; //API KEY OF OPEANWEATHERMAP
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(weatherUrl)
@@ -37,7 +37,7 @@ document.getElementById("getWeather").addEventListener("click", function() {
 
 
 function fetchCityImage(city) {
-    const unsplashApiKey = "7anJR0qf1mk30cnIprceBXC1azCkU0IthI1S71Tz-b8"; 
+    const unsplashApiKey = "7anJR0qf1mk30cnIprceBXC1azCkU0IthI1S71Tz-b8"; //API KEY OF Unsplash
     const unsplashUrl = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(city)}&client_id=${unsplashApiKey}&per_page=1`;
 
     fetch(unsplashUrl)
